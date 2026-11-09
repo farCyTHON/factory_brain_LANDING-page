@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BunnonBrain — Intelligence For Connected Factories</title>
+  <meta name="description" content="BunnonBrain is an AI-powered operations and intelligence platform for connected garment factories — buyers, buying houses, factories and workers on one platform, from first inquiry to final shipment." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="BunnonBrain — The Factory Brain" />
+  <meta property="og:description" content="AI-powered operations & intelligence for connected garment factories." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Fonts & icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin />
+  <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Full-bleed background video -->
+  <div class="bg" aria-hidden="true">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- 3D orbital dot ring — the connected value chain -->
+  <canvas id="orb" aria-hidden="true"></canvas>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <a class="logo" href="#" aria-label="BunnonBrain home">
+        <img src="assets/logo.svg" alt="" width="52" height="52" />
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#" class="active">Home</a>
+        <a href="#platform">Platform</a>
+        <a href="#modules">Modules</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="sign-in" href="#">Sign in</a>
+
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay" hidden></div>
+    <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Mobile">
+      <a href="#" class="active">Home</a>
+      <a href="#platform">Platform</a>
+      <a href="#modules">Modules</a>
+      <a href="#contact">Contact</a>
+      <a class="mm-signin" href="#">Sign in</a>
+    </nav>
+
+    <!-- Hero -->
+    <main class="hero">
+      <div class="hero-inner" id="hero-inner">
+
+        <div class="trust anim" style="--d: 0.1s">
+          <span class="avatar a1 anim" style="--d: 0.1s"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></span>
+          <span class="avatar a2 anim" style="--d: 0.16s"><i class="fa-brands fa-amazon" aria-hidden="true"></i></span>
+          <span class="avatar a3 anim" style="--d: 0.22s"><i class="fa-brands fa-google" aria-hidden="true"></i></span>
+          <span class="trust-pill anim" style="--d: 0.28s">Trusted by 2000+ Factories &amp; Brands</span>
+        </div>
+
+        <h1 class="headline">
+          <span class="hl" style="--d: 0.12s">BunnonBrain</span>
+          <span class="hl" style="--d: 0.3s">The Factory Brain</span>
+        </h1>
+
+        <p class="subhead anim" style="--d: 0.28s">
+          Connect buyers, buying houses, factories and workers in one AI-powered
+          platform — from first inquiry to final shipment.
+        </p>
+
+        <a class="cta" id="cta" style="--d: 0.4s" href="#contact">Request a Demo</a>
+
+      </div>
+    </main>
+
+    <!-- Stats -->
+    <footer class="stats" id="stats">
+      <div class="stat anim" style="--d: 0.5s">
+        <span class="stat-icon" aria-hidden="true">&lt;</span>
+        <span class="stat-value" data-target="10" data-decimals="0" data-suffix="">0</span>
+        <span class="stat-label">Core Modules</span>
+      </div>
+      <div class="stat anim" style="--d: 0.58s">
+        <span class="stat-icon" aria-hidden="true">%</span>
+        <span class="stat-value" data-target="4" data-decimals="0" data-suffix="">0</span>
+        <span class="stat-label">Connected Portals</span>
+      </div>
+      <div class="stat anim" style="--d: 0.66s">
+        <span class="stat-icon" aria-hidden="true">*</span>
+        <span class="stat-value" data-target="24" data-decimals="0" data-suffix="/7">0</span>
+        <span class="stat-label">Live Floor Monitoring</span>
+      </div>
+      <div class="stat anim" style="--d: 0.74s">
+        <span class="stat-icon" aria-hidden="true">#</span>
+        <span class="stat-value" data-target="360" data-decimals="0" data-suffix="°">0</span>
+        <span class="stat-label">Order Visibility</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
